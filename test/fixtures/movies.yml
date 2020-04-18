@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  summary: MyText
+  year: 2020-04-18
+  genre: MyString
+  imdb_link: MyString
+
+two:
+  title: MyString
+  summary: MyText
+  year: 2020-04-18
+  genre: MyString
+  imdb_link: MyString
