@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+venue = Venue.create(name: 'PVR', columns: 10, rows: 10)
+
+venue.rows.times.each do |row|
+    row = ('a'..'z').to_a[row-1]
+    venue.rows.times.each do |column|
+        column = ('1'..'10').to_a[column -1]
+        venue.seats.create(row: row, column: column)
+    end
+end
