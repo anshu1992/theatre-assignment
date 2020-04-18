@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app searches for best available seats in a theatre and books them for user.
 
 Things you may want to cover:
 
-* Ruby version
+### Create Database and Run Seed for Admin feature
 
-* System dependencies
+- Run `rails db:create` for creating database.
+- Run `rails db:migrate` for setting up tables.
+- Run `rails db:seed` for creating a demo Venue(Theatre) and ActiveAdmin user for admin activities.
 
-* Configuration
+### Create a new Venue.
 
-* Database creation
+- To create a new Venue please go to `localhost:3000/admin`.
+- Sign in using `admin@example.com` as email and `password` as password.
+- Click the `Venue` tab and then click `New Venue` for creating a venue by selecting desired number of rows and columns for seats.
 
-* Database initialization
+### To book the seats.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Goto the root page and select the venue from the given form.
+- Enter the desired number of seats and click search to get the best available seats booked.
