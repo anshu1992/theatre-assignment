@@ -15,3 +15,4 @@ venue.rows.times.each do |row|
         venue.seats.create(row: row, column: column)
     end
 end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

@@ -1,0 +1,15 @@
+<div><strong>Available best seats in venue <%= @venue.name%></strong></div>
+<table>
+  <tr>
+    <th>number</th>
+    <th>Row</th>
+    <th>Column</th>
+  </tr>
+  <% @seats.each_with_index do |seat, index|%>
+    <tr>
+      <td><%= index + 1%></td>
+      <td><%= seat.row%></td>
+      <td><%= seat.column%></td>
+    </tr>
+  <% end%>
+</table>

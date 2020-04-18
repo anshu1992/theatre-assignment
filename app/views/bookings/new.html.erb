@@ -1,0 +1,8 @@
+<%= form_tag(search_bookings_path) do %>
+ <div><b>Select Venue:</b> <%= select_tag "venue", options_from_collection_for_select(@venues, "id", "name")%></div>
+ <br>
+ <div><b>Number Of Seats:</b> <%= number_field_tag :seats, nil, required: true%></div><br>
+ <div>
+ 	<%= submit_tag "search"%>
+ </div>
+<% end %>
